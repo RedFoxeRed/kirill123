@@ -1,0 +1,13 @@
+﻿@using WebASPnet.Models
+@model List<Vegetable>
+@{ 
+    ViewBag.Title = "Овощи c ценой";
+}
+<h2>Список овощей с ценой</h2>
+@foreach(var vegetable in Model)
+{
+ <div>
+     @vegetable.Name 
+     @vegetable.Price
+     </div>
+}
